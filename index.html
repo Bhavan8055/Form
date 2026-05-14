@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+   
+ 
+</head>
+<body>
+    <h1>Signup Form</h1>
+    <form action="response.html">
+    <table>
+        <tr>
+            <td>
+                <label>Name:</label>
+            </td>
+            <td>
+                <input type="text" name="n" size="15" required>
+                <p>Enter your name</p>
+            </td>
+        </tr>
+    
+
+        <tr>
+            <td>
+                <label>College:</label>
+            </td>
+            <td>
+                <input type="text" name="clg" size="15" disabled>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                 <label>Primary e-mail</label>
+            </td>
+            <td>
+                 <input type="email" name="e" size="15" required> 
+                 <p>Enter your e-mail</p>
+                 <img class="valid" src="" alt="correct">
+                 <img class="invalid" src="" alt="incorrect">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                 <label>Secondary e-mail:</label>
+            </td>
+            <td>
+                 <input type="email" name="se" size="15">
+                 <p>Enter your secondary email</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                 <label>Password:</label>
+            </td>
+            <td>
+                 <input type="password" name="p" size="15" required>
+                 <p>Enter password</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                 <label>Gender:</label>
+            </td>
+            <td>
+                <input type="radio" name="gender" value="M" checked>            
+                 <label >Male</label>
+            
+        
+                <input type="radio" name="gender" value="F">
+                 <label >Female</label>
+             
+
+                <input type="radio" name="gender" value="O">
+                 <label >Other</label>  
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>Age:</label>
+            </td>
+            <td>
+                <input type="number" name="age" max="100" min="18" size="15" required >
+                <p>Enter your age</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>MOD:</label>
+            </td>
+            <td>
+                <input type="text" name="mod" size="15" value="Online" readonly>
+            </td>
+        </tr>
+         <tr>
+            <td> 
+                <input type="submit" name="submit">
+            </td>
+         </tr>
+        
+
+    </table>
+    </form>
+</body>
+</html>
