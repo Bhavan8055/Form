@@ -38,8 +38,19 @@ p{
 input:hover + p
 {
     display: inline;
-    background-color: red;
+    background-color: rgb(114, 209, 232);
     font-family: monospace;
+}
+
+pre{
+    display: none;
+}
+
+input:hover + pre
+{
+    display: inline;
+    background-color: rgb(114, 209, 232);
+    font-family: monospace;   
 }
 
 input:focus

@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>response</title>
+    <title>Video Display</title>
+
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+        }
+
+        video{
+            border: 3px solid white;
+            border-radius: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1> Thankyou For Your Response </h1>
+
+    <h1>Thank You For Your Response</h1>
+    <h2>Check this out... I found something for you</h2>
+
+    <img src="Di.jpeg" alt="image" width="500" height="600"><br>
+    <video width="800" height="400" controls autoplay muted>
+        <source src="Di.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
 </body>
 </html>

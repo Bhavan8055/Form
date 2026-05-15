@@ -9,7 +9,7 @@
  
 </head>
 <body>
-    <h1>Signup Form</h1>
+    <h1>Kindly Fill The Form Below</h1>
     <form action="response.html">
     <table>
         <tr>
@@ -28,7 +28,8 @@
                 <label>College:</label>
             </td>
             <td>
-                <input type="text" name="clg" size="15" disabled>
+                <input type="text" name="clg" size="15">
+                <p>Enter your college name</p>
             </td>
         </tr>
 
@@ -50,7 +51,7 @@
             </td>
             <td>
                  <input type="email" name="se" size="15">
-                 <p>Enter your secondary email</p>
+                 <p>Enter your secondary email (optional)</p>
             </td>
         </tr>
 
@@ -61,6 +62,16 @@
             <td>
                  <input type="password" name="p" size="15" required>
                  <p>Enter password</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                 <label>Re-enter Password:</label>
+            </td>
+            <td>
+                 <input type="password" name="p" size="15" required>
+                 <p>ReEnter password</p>
             </td>
         </tr>
 
@@ -103,10 +114,10 @@
          <tr>
             <td> 
                 <input type="submit" name="submit">
+                <pre>Click here to submit 
+your form</pre>
             </td>
          </tr>
-        
-
     </table>
     </form>
 </body>
