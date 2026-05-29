@@ -1,96 +1,80 @@
-body{
-        background-color: beige;
-        font-family: cursive;
-}
+#submitBtn{
 
-h1{
-    text-align: center;
-}
+    padding: 15px 40px;
 
-form{
-    border: 3px solid black;
-}
+    border: 2px solid #00ffff;
 
-input:required
-{
-    border: 3px solid violet;
-}
+    border-radius: 15px;
 
-input:not(:required)
-{
-    border: 3px dashed brown;
-}
+    font-size: 18px;
 
-input:disabled
-{
-    border: 2px dotted violet;
-}
-
-input:read-only
-{
-    background-color: gray;
-}
-
-p{
-    display: none;
-}
-
-input:hover + p
-{
-    display: inline;
-    background-color: rgb(114, 209, 232);
-    font-family: monospace;
-}
-
-pre{
-    display: none;
-}
-
-input:hover + pre
-{
-    display: inline;
-    background-color: rgb(114, 209, 232);
-    font-family: monospace;   
-}
-
-input:focus
-{
-   background-color: rgb(175, 211, 226);
-   font-weight: bold;
-}
-
-img
-{
-    display: none;
-}
-
-input[type="email"]:focus:valid~img.valid
-{
-    display: inline;
-    height: 20px;
-    width: 20px;
-}
-
-input[type="email"]:focus:invalid~img.invalid
-{
-    display: inline;
-    height: 20px;
-    width: 20px;
-}
-
-input[type="radio"]:checked
-{
-    width: 20px;
-    height: 20px;
-}
-
-input[type="radio"]:checked + label
-{
     font-weight: bold;
-    color: red;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #ff0080,
+        #7928ca,
+        #00ffff
+    );
+
+    background-size: 300% 300%;
+
+    box-shadow:
+        0 0 15px #ff00ff,
+        0 0 25px #00ffff,
+        inset 0 0 10px rgba(255,255,255,0.3);
+
+    transition: 0.4s;
+
+    animation: gradientMove 5s ease infinite;
 }
 
-input[type="submit"]
-{
-    border: 2px solid violet;
+/* HOVER EFFECT */
+
+#submitBtn:hover{
+
+    transform: scale(1.08);
+
+    background-position: right center;
+
+    box-shadow:
+        0 0 25px #ff00ff,
+        0 0 45px #00ffff,
+        0 0 65px #7928ca;
+
+    color: #fff;
+}
+
+/* CLICK EFFECT */
+
+#submitBtn:active{
+
+    transform: scale(0.96);
+
+    box-shadow:
+        0 0 10px #ff00ff,
+        0 0 20px #00ffff;
+}
+
+/* ANIMATED GRADIENT */
+
+@keyframes gradientMove{
+
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
 }
